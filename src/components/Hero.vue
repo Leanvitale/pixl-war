@@ -62,7 +62,7 @@ export default {
 </script>
 
 <template>
-    <section class="fullpage flex-col justify-center items-center">
+    <section class="flex h-screen w-full flex-col justify-center items-center">
         <h1 class="logo text-[43px] lg:text-9xl lg:-tracking-[1rem] text-white">Pixl War</h1>
         <p class="text-lg lg:text-3xl mt-2 lg:mt-5 text-white text-center">
             The biggest artwork in Blockchain history,<br />created
