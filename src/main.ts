@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
 import './style.scss'
 import App from './App.vue'
+import VueFullPage from 'vue-fullpage.js'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(VueFullPage)
+app.mount('#app')

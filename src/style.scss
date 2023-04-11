@@ -187,3 +187,7 @@ $shadow-color: #4aa52e;
         border-right: 2px white solid;
     }
 }
+
+:focus-visible {
+    outline: none;
+}
