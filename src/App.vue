@@ -10,7 +10,6 @@ import Navbar from './components/Navbar.vue'
 import BtnPlay from './ui/BtnPlay.vue'
 
 export default {
-    name: 'App',
     components: {
         Hero,
         Event,
@@ -43,6 +42,7 @@ export default {
                 let sectionOffset = sections[i].offsetTop
                 this.offsets.push(sectionOffset)
             }
+            this.scrollToSection(this.activeSection, true)
         },
         /**
          * Handle the 'mousewheel' event for other browsers
@@ -73,23 +73,23 @@ export default {
          * Move to the previous section or the last section if you're on the first section
          */
         moveDown() {
-            this.inMove = true
-            this.activeSection--
+            if (this.activeSection > 0) {
+                this.inMove = true
+                this.activeSection--
 
-            if (this.activeSection < 0) this.activeSection = this.offsets.length - 1
-
-            this.scrollToSection(this.activeSection, true)
+                this.scrollToSection(this.activeSection, true)
+            }
         },
         /**
          * Move to the next section or the first section if you're on the last section
          */
         moveUp() {
-            this.inMove = true
-            this.activeSection++
+            if (this.activeSection < this.offsets.length - 1) {
+                this.inMove = true
+                this.activeSection++
 
-            if (this.activeSection > this.offsets.length - 1) this.activeSection = 0
-
-            this.scrollToSection(this.activeSection, true)
+                this.scrollToSection(this.activeSection, true)
+            }
         },
         /**
          * Scrolls to the passed section id if the section exists and the delay is over
