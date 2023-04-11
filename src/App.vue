@@ -27,6 +27,7 @@ export default {
             options: {
                 anchors: ['PixlWar', 'Event', 'Rules', 'Alliance', 'Time', 'Points', 'CTA'],
                 beforeLeave: this.beforeLeave,
+                responsiveWidth: 640,
             },
         }
     },
@@ -35,12 +36,21 @@ export default {
             this.activeSection = destination.index
         },
     },
+    computed: {
+        isMobile(): boolean {
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                return true
+            } else {
+                return false
+            }
+        },
+    },
 }
 </script>
 
 <template>
     <div class="relative">
-        <Navbar class="absolute" :slide="activeSection" />
+        <Navbar class="absolute" :slide="activeSection" :isMobile="isMobile" />
         <full-page ref="fullpage" :options="options" id="fullpage" class="-mt-[100px]">
             <Hero class="section" />
             <Event class="section" />
@@ -51,21 +61,10 @@ export default {
             <CTA class="section" />
         </full-page>
         <!-- Desktop Slide position -->
-        <div class="sections-menu max-md:hidden">
+        <div class="sections-menu max-sm:hidden" v-if="!isMobile">
             <a :href="`#${offset}`" v-for="(offset, index) in options.anchors" v-bind:key="index">
                 <span class="menu-point" v-bind:class="{ active: activeSection == index }"> </span>
             </a>
         </div>
-
-        <!-- CTA to Play in Mobile -->
-        <div class="flex sticky bottom-0 z-20 py-8 px-4 justify-center max-w-7xl m-auto text-white w-full md:hidden">
-            <BtnPlay />
-        </div>
     </div>
 </template>
-
-<style lang="scss" scoped>
-.fp-watermark {
-    display: none;
-}
-</style>

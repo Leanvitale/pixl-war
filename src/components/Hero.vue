@@ -69,6 +69,7 @@ export default {
             <span id="console"></span>
             <span ref="puntero">&#95;</span>
         </p>
+        <img src="../assets/img/arrow-down.svg" alt="" class="w-14 absolute top-[calc(100vh-150px)] z-20 arrow left-0 right-0 mx-auto" />
     </section>
 </template>
 
@@ -79,5 +80,23 @@ export default {
 .console-underscore {
     display: inline-block;
     position: relative;
+}
+
+.arrow {
+    animation: scrolldown 3s infinite;
+}
+
+@keyframes scrolldown {
+    0% {
+        top: calc(100vh - 130px);
+    }
+
+    50% {
+        top: calc(100vh - 100px);
+    }
+
+    100% {
+        top: calc(100vh - 130px);
+    }
 }
 </style>

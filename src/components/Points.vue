@@ -3,8 +3,12 @@
         <Title>Points</Title>
 
         <Paragraph>
-            Painting on the canvas earns points, with each pixel painted worth 1 point for the participant. These points will be used later
-            for an airdrop to be held in the future.
+            <ol>
+                <li class="mb-3">
+                    <span class="logo">*</span> Painting on the canvas earns you points. Each pixel painted is worth 1 point.
+                </li>
+                <li class="mb-3"><span class="logo">*</span> These points will be used for a future airdrop event.</li>
+            </ol>
         </Paragraph>
     </section>
 </template>

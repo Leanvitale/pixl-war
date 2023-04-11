@@ -55,6 +55,8 @@ body {
     flex-direction: column;
 
     @media (max-width: 680px) {
+        height: auto;
+        padding: 18px 0px;
         max-width: 90%;
         justify-content: flex-start;
         align-items: flex-start;
@@ -102,8 +104,8 @@ $shadow-color: #4aa52e;
     display: inline-block;
     position: relative;
     text-align: center;
-    font-size: 30px;
-    padding: 10px 50px;
+    font-size: 28px;
+    padding: 6px 30px;
     text-decoration: none;
     color: white;
     box-shadow: inset (-$shadow-width) (-$shadow-width) 0px 0px $shadow-color;
@@ -190,4 +192,8 @@ $shadow-color: #4aa52e;
 
 :focus-visible {
     outline: none;
+}
+
+.fp-watermark {
+    display: none !important;
 }

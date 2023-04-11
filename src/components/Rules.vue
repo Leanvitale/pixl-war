@@ -4,20 +4,16 @@
 
         <Paragraph>
             <ol>
+                <li class="mb-3"><span class="logo">*</span> Join our event inspired by the popular "Reddit Place" on Reddit!</li>
+                <li class="mb-3"><span class="logo">*</span> Get creative, painting one pixel at a time alongside fellow participants.</li>
                 <li class="mb-3">
-                    <span class="logo">*</span> We will be based on the famous game that took place on Reddit (Reddit Place).
+                    <span class="logo">*</span> Initially, there's a 1-min wait per pixel, but as the event nears its end, it maxes out at 5
+                    mins.
                 </li>
-                <li class="mb-3"><span class="logo">*</span> All participants can paint 1 pixel at a time.</li>
+                <li class="mb-3"><span class="logo">*</span> Stock up on 10 pixels and use them instantly, with no waiting!</li>
                 <li class="mb-3">
-                    <span class="logo">*</span> There will be an initial delay time of 1 minute per pixel, which will increase as we
-                    approach the end of the event, up to a maximum of 5 minutes.
-                </li>
-                <li class="mb-3">
-                    <span class="logo">*</span> Pixels can be accumulated up to a maximum of 10, and then used without delay.
-                </li>
-                <li class="mb-3">
-                    <span class="logo">*</span> The colors to be used are NFTs from the Color Sale collection. Participants must acquire
-                    their colors to participate in the tournament, which can be obtained through their Mint or secondary markets.
+                    <span class="logo">*</span> Use NFTs from the Color Sale collection as your color palette. Grab your colors and dive
+                    into the event fun!
                 </li>
             </ol>
         </Paragraph>

@@ -3,11 +3,9 @@
         <Title>Alliance with<br />Color.sale</Title>
 
         <Paragraph>
-            We have made an alliance with the
-            <a class="logo border-b-2" href="https://color.sale" target="_blank">color.sale</a>
-            collection to use their NFTs in this event. This collection has the particularity of having a number of 16,777,216 NFTs,
-            ensuring that there are enough colors for all participants. All colors are unique because this collection has generated all the
-            Hexadecimal colors without repetitions.
+            We've formed an alliance with the <a class="logo border-b-2" href="https://color.sale" target="_blank">color.sale</a> collection
+            to use their NFTs in this event. This collection stands out for having 16,777,216 unique NFTs, ensuring enough colors for all
+            participants. Each color is unique, as the collection has generated all hexadecimal colors without repetition.
         </Paragraph>
     </section>
 </template>
