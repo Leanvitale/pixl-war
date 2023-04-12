@@ -1,5 +1,5 @@
 <template>
-    <a class="text-xl btn-event flex justify-center items-center" href="https://play-pixl-war.on.fleek.co">
+    <a class="text-xl btn-event flex justify-center items-center" href="https://play-pixl-war.on.fleek.co" target="_blank">
         <img src="../assets/img/enter.svg" alt="Go to Event" class="h-5 w-5" v-if="isMobile" />
         <span v-else>Play the Event</span>
     </a>
