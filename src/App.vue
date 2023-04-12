@@ -58,24 +58,26 @@ export default {
 </script>
 
 <template>
-    <div class="relative opacity-0 ease-in-out duration-500 z-10" :class="{ 'opacity-100': !showPreloader }">
-        <Navbar class="absolute" :slide="activeSection" :isMobile="isMobile" />
-        <full-page ref="fullpage" :options="options" id="fullpage" class="-mt-[100px]">
-            <Hero class="section" />
-            <Legacy class="section" />
-            <Alliance class="section" />
-            <Rules class="section" />
-            <Canvas class="section" />
-            <Time class="section" />
-            <Points class="section" />
-            <CTA class="section" />
-        </full-page>
-        <!-- Desktop Slide position -->
-        <div class="sections-menu max-sm:hidden" v-if="!isMobile">
-            <a :href="`#${offset}`" v-for="(offset, index) in options.anchors" v-bind:key="index">
-                <span class="menu-point" v-bind:class="{ active: activeSection == index }"> </span>
-            </a>
+    <div class="relative">
+        <div class="relative opacity-0 ease-in-out duration-500 z-10" :class="{ 'opacity-100': !showPreloader }">
+            <Navbar class="absolute" :slide="activeSection" :isMobile="isMobile" />
+            <full-page ref="fullpage" :options="options" id="fullpage" class="-mt-[100px]">
+                <Hero class="section" />
+                <Legacy class="section" />
+                <Alliance class="section" />
+                <Rules class="section" />
+                <Canvas class="section" />
+                <Time class="section" />
+                <Points class="section" />
+                <CTA class="section" />
+            </full-page>
+            <!-- Desktop Slide position -->
+            <div class="sections-menu max-sm:hidden" v-if="!isMobile">
+                <a :href="`#${offset}`" v-for="(offset, index) in options.anchors" v-bind:key="index">
+                    <span class="menu-point" v-bind:class="{ active: activeSection == index }"> </span>
+                </a>
+            </div>
         </div>
+        <Preloader v-if="showPreloader" class="z-20" />
     </div>
-    <Preloader v-if="showPreloader" class="z-20" />
 </template>
