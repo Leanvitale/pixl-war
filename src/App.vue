@@ -58,7 +58,6 @@ export default {
 </script>
 
 <template>
-    <Preloader v-if="showPreloader" class="z-20" />
     <div class="relative opacity-0 ease-in-out duration-500 z-10" :class="{ 'opacity-100': !showPreloader }">
         <Navbar class="absolute" :slide="activeSection" :isMobile="isMobile" />
         <full-page ref="fullpage" :options="options" id="fullpage" class="-mt-[100px]">
@@ -78,4 +77,5 @@ export default {
             </a>
         </div>
     </div>
+    <Preloader v-if="showPreloader" class="z-20" />
 </template>
