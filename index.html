@@ -5,13 +5,41 @@
         <link rel="icon" href="/assets/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pixl War</title>
-        <link rel="stylesheet preload prefetch" as="style" href="/fonts/PixelOperator8-Bold.ttf" type="font/ttf" crossorigin="anonymous" />
-        <link rel="stylesheet preload prefetch" as="style" href="/fonts/PixelOperator.ttf" type="font/ttf" crossorigin="anonymous" />
 
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
         <link rel="manifest" href="/assets/site.webmanifest" />
+
+        <style>
+            @font-face {
+                font-family: '8-bit-bold';
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+                unicode-range: U+000-5FF;
+                src: local('8-bit-bold'), url('/public/fonts/PixelOperator8-Bold.woff2') format('woff2');
+            }
+
+            @font-face {
+                font-family: '8-bit';
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+                unicode-range: U+000-5FF;
+                src: local('8-bit'), url('/public/fonts/PixelOperator.woff2') format('woff2');
+            }
+
+            * {
+                font-family: '8-bit', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            h1,
+            h2,
+            .text-8bit-bold {
+                font-family: '8-bit-bold', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+        </style>
 
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <meta

@@ -2,32 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-    font-family: "8-bit-bold";
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+000-5FF;
-    src: local("8-bit-bold"), url("/public/fonts/PixelOperator8-Bold.ttf") format("truetype");
-}
-
-@font-face {
-    font-family: "8-bit";
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-    unicode-range: U+000-5FF;
-    src: local("8-bit"), url("/public/fonts/PixelOperator.ttf") format("truetype");
-}
-
-* {
-    font-family: '8-bit';
-}
-
-h1, h2, .text-8bit-bold {
-    font-family: '8-bit-bold';
-}
-
 body, .bg-dark {
     background: #09090b;
 }
