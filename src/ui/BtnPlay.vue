@@ -1,8 +1,8 @@
 <template>
-    <span class="text-xl tiny-play-btn">
-        <img src="../assets/img/enter.svg" alt="Go to Event" class="h-6 w-6" v-if="isMobile" />
+    <a class="text-xl btn-event flex justify-center items-center">
+        <img src="../assets/img/enter.svg" alt="Go to Event" class="h-5 w-5" v-if="isMobile" />
         <span v-else>Play the Event</span>
-    </span>
+    </a>
 </template>
 
 <script lang="ts">

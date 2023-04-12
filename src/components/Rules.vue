@@ -12,8 +12,9 @@
                 </li>
                 <li class="mb-3"><span class="logo">*</span> Stock up on 10 pixels and use them instantly, with no waiting!</li>
                 <li class="mb-3">
-                    <span class="logo">*</span> Use NFTs from the Color Sale collection as your color palette. Grab your colors and dive
-                    into the event fun!
+                    <span class="logo">*</span> Use NFTs from the
+                    <a class="logo border-b-2" href="https://color.sale" target="_blank">color.sale</a> collection as your color palette.
+                    Grab your colors and dive into the event fun!
                 </li>
             </ol>
         </Paragraph>

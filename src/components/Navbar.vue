@@ -1,6 +1,8 @@
 <template>
-    <div class="flex sticky top-0 z-20 py-8 px-4 max-w-7xl m-auto text-white w-full items-center max-md:bg-black">
-        <span class="logo w-fit text-xl text-8bit-bold tracking-[-0.15rem]" v-if="slide && slide > 0">Pixl War</span>
+    <div class="flex sticky top-0 z-20 py-8 px-4 max-w-7xl m-auto text-white w-full items-center max-md:bg-zinc-950">
+        <a href="#PixlWar">
+            <span class="logo w-fit text-xl text-8bit-bold tracking-[-0.15rem]" v-if="slide && slide > 0">Pixl War</span>
+        </a>
         <a href="https://twitter.com" target="_blank" class="ml-auto">
             <svg
                 class="h-7 svgIcon cursor-pointer"

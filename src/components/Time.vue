@@ -4,7 +4,7 @@
 
         <Paragraph>
             <ol>
-                <li class="mb-3"><span class="logo">*</span> The event begins on <span class="logo">May 1st</span>.</li>
+                <li class="mb-3"><span class="logo">*</span> The event begins on <span class="logo">May 18th</span>.</li>
                 <li class="mb-3">
                     <span class="logo">*</span> It will last for one week or until the canvas is completely painted, whichever comes first.
                 </li>

@@ -86,17 +86,33 @@ export default {
     animation: scrolldown 3s infinite;
 }
 
+@media (max-width: 680px) {
+    @keyframes scrolldown {
+        0% {
+            top: calc(90vh - 130px);
+        }
+
+        50% {
+            top: calc(90vh - 100px);
+        }
+
+        100% {
+            top: calc(90vh - 130px);
+        }
+    }
+}
+
 @keyframes scrolldown {
     0% {
-        top: calc(90vh - 130px);
+        top: calc(100vh - 130px);
     }
 
     50% {
-        top: calc(90vh - 100px);
+        top: calc(100vh - 100px);
     }
 
     100% {
-        top: calc(90vh - 130px);
+        top: calc(100vh - 130px);
     }
 }
 </style>

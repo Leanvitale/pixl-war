@@ -1,22 +1,24 @@
 <script lang="ts">
 import Hero from './components/Hero.vue'
-import Event from './components/Event.vue'
+import Legacy from './components/Legacy.vue'
 import Rules from './components/Rules.vue'
 import Alliance from './components/Alliance.vue'
 import Time from './components/Time.vue'
 import Points from './components/Points.vue'
 import CTA from './components/CTA.vue'
 import Navbar from './components/Navbar.vue'
+import Canvas from './components/Canvas.vue'
 import BtnPlay from './ui/BtnPlay.vue'
 
 export default {
     components: {
         Hero,
-        Event,
+        Legacy,
         Rules,
         Alliance,
         Time,
         Points,
+        Canvas,
         CTA,
         Navbar,
         BtnPlay,
@@ -25,7 +27,8 @@ export default {
         return {
             activeSection: 0,
             options: {
-                anchors: ['PixlWar', 'Event', 'Rules', 'Alliance', 'Time', 'Points', 'CTA'],
+                licenseKey: 'gplv3-license',
+                anchors: ['PixlWar', 'Legacy', 'Alliance', 'Rules', 'Canvas', 'Time', 'Points', 'CTA'],
                 beforeLeave: this.beforeLeave,
                 responsiveWidth: 640,
             },
@@ -53,9 +56,10 @@ export default {
         <Navbar class="absolute" :slide="activeSection" :isMobile="isMobile" />
         <full-page ref="fullpage" :options="options" id="fullpage" class="-mt-[100px]">
             <Hero class="section" />
-            <Event class="section" />
-            <Rules class="section" />
+            <Legacy class="section" />
             <Alliance class="section" />
+            <Rules class="section" />
+            <Canvas class="section" />
             <Time class="section" />
             <Points class="section" />
             <CTA class="section" />
