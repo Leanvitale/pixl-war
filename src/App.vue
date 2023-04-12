@@ -8,7 +8,7 @@ import Points from './components/Points.vue'
 import CTA from './components/CTA.vue'
 import Navbar from './components/Navbar.vue'
 import Canvas from './components/Canvas.vue'
-import BtnPlay from './ui/BtnPlay.vue'
+import Preloader from './components/Preloader.vue'
 
 export default {
     components: {
@@ -21,11 +21,12 @@ export default {
         Canvas,
         CTA,
         Navbar,
-        BtnPlay,
+        Preloader,
     },
     data() {
         return {
             activeSection: 0,
+            showPreloader: true,
             options: {
                 licenseKey: 'gplv3-license',
                 anchors: ['PixlWar', 'Legacy', 'Alliance', 'Rules', 'Canvas', 'Time', 'Points', 'CTA'],
@@ -33,6 +34,11 @@ export default {
                 responsiveWidth: 640,
             },
         }
+    },
+    mounted() {
+        setTimeout(() => {
+            this.showPreloader = false
+        }, 1800)
     },
     methods: {
         beforeLeave(origin: any, destination: any) {
@@ -52,7 +58,8 @@ export default {
 </script>
 
 <template>
-    <div class="relative">
+    <Preloader v-if="showPreloader" class="z-20" />
+    <div class="relative opacity-0 ease-in-out duration-500 z-10" :class="{ 'opacity-100': !showPreloader }">
         <Navbar class="absolute" :slide="activeSection" :isMobile="isMobile" />
         <full-page ref="fullpage" :options="options" id="fullpage" class="-mt-[100px]">
             <Hero class="section" />
