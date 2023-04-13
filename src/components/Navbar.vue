@@ -3,7 +3,7 @@
         <a href="#PixlWar">
             <span class="logo w-fit text-xl text-8bit-bold tracking-[-0.15rem]" v-if="slide && slide > 0">Pixl War</span>
         </a>
-        <a href="https://twitter.com" target="_blank" class="ml-auto">
+        <a href="https://twitter.com/PixlWar" target="_blank" class="ml-auto">
             <svg
                 class="h-7 svgIcon cursor-pointer"
                 viewBox="0 -2 20 20"
